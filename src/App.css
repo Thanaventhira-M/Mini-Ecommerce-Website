@@ -1,0 +1,110 @@
+/* Header Styling */
+header {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    height: 10vh;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(32, 111, 180);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Profile Picture */
+#Profile-Pic img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* User Name */
+#name h3 {
+    position: relative;
+    top: -50px;
+    left: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    white-space: nowrap;
+
+}
+
+/* Navigation Items */
+#list-Items {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 20px;
+}
+
+#list-Items p {
+    margin-left: 10px;
+    font-size: large;
+}
+
+/* Navigation Links */
+.li {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* 🔥 Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    #Profile-Pic {
+        margin-bottom: 10px;
+    }
+
+    #Profile-Pic img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #name h3 {
+        font-size: 1rem;
+    }
+
+    #list-Items {
+        position: relative;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    #list-Items p {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+    #Profile-Pic img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #name h3 {
+        font-size: 0.9rem;
+    }
+
+    #list-Items {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .li {
+        font-size: 0.9rem;
+    }
+}

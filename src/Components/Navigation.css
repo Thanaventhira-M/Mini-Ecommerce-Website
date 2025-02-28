@@ -1,0 +1,10 @@
+#Naviagtion{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#Naviagtion h1{
+   font-family:sans-serif;
+}

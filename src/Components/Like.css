@@ -1,0 +1,103 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #dc143c;
+}
+
+/* Center the heart in the page */
+.heart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    position: relative;
+    cursor: pointer;
+     top: -45px;
+     left: 90px;
+}
+
+/* Heart styles */
+.heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+/* Gray heart (default) */
+.gray-heart {
+    background: #ccc;
+}
+
+.gray-heart::before,
+.gray-heart::after {
+    content: "";
+    background: #ccc;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+.gray-heart::before {
+    top: -12.5px;
+    left: 0;
+}
+
+.gray-heart::after {
+    left: 12.5px;
+    top: 0;
+}
+
+/* Red heart (hidden initially) */
+.red-heart {
+    background: var(--main-color);
+    visibility: hidden;
+}
+
+.red-heart::before,
+.red-heart::after {
+    content: "";
+    background: var(--main-color);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+.red-heart::before {
+    top: -12.5px;
+    left: 0;
+}
+
+.red-heart::after {
+    left: 12.5px;
+    top: 0;
+}
+
+/* When clicked, show the red heart */
+.red-heart.animation {
+    animation: pop 0.9s linear;
+    visibility: visible;
+}
+
+/* Gray heart turns red */
+.fill-color {
+    background: var(--main-color) !important;
+}
+
+/* Animation */
+@keyframes pop {
+    100% {
+        transform: scale(1.7) rotate(-45deg);
+        opacity: 0;
+    }
+}

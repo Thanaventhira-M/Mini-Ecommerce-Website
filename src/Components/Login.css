@@ -1,0 +1,126 @@
+
+table {
+  width: 100%;
+  max-width: 390px;
+  height: auto;
+  box-shadow: 
+      0 1px 3px 1px rgba(0, 128, 0, 0.15), 
+      0 2px 6px 2px rgba(0, 128, 0, 0.15), 
+      0 4px 12px 4px rgba(0, 128, 0, 0.15), 
+      0 8px 24px 8px rgba(0, 128, 0, 0.15), 
+      0 16px 48px 16px rgba(0, 128, 0, 0.15), 
+      0 32px 96px 32px rgba(0, 128, 0, 0.15);
+  margin: 50px auto; 
+  display: block;
+  position: relative;
+}
+
+.Table-Container {
+  margin-top: 40px;
+  padding: 30px;
+  text-align: center;
+}
+
+
+td {
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.Table-Container h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sub-btn {
+  padding: 8px;
+  width: 100%;
+  max-width: 120px;
+  border: none;
+  background-color: lightblue;
+  border: 2px solid rebeccapurple;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+  
+}
+
+
+.google-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.google-btn img {
+  width: 190px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  table {
+      max-width: 90%;
+  }
+
+  .Table-Container {
+      padding: 20px;
+  }
+
+  input, textarea {
+      font-size: 1rem;
+  }
+
+  .sub-btn {
+      width: 100%;
+  }
+
+  .google-btn {
+      justify-content: center;
+  }
+
+  #Shoping-Image img {
+      max-width: 500px;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+  table {
+      width: 100%;
+  }
+
+  .Table-Container h1 {
+      font-size: 1.3rem;
+  }
+
+  input, textarea {
+      font-size: 0.9rem;
+      padding: 6px;
+  }
+
+  .sub-btn {
+      font-size: 0.9rem;
+      padding: 6px;
+  }
+
+  .google-btn img {
+      width: 150px;
+      height: 35px;
+  }
+
+  #Shoping-Image img {
+      max-width: 100%;
+      height: auto;
+  }
+}

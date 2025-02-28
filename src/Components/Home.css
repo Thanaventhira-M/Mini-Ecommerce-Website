@@ -1,0 +1,5 @@
+.Product-Container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
